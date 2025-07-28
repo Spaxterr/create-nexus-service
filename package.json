@@ -6,6 +6,9 @@
     "bin": {
         "create-nexus-service": "bin/cli.js"
     },
+    "scripts": {
+        "release": "np"
+    },
     "files": [
         "bin",
         "lib",
@@ -19,5 +22,8 @@
         "chalk": "^5.4.1",
         "commander": "^14.0.0",
         "fs-extra": "^11.3.0"
+    },
+    "devDependencies": {
+        "np": "^10.2.0"
     }
 }
