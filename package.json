@@ -1,0 +1,23 @@
+{
+    "name": "create-nexus-service",
+    "version": "1.0.0",
+    "description": "CLI tool to create a NexusNF service project",
+    "author": "Spaxter",
+    "bin": {
+        "create-nexus-service": "./bin/cli.js"
+    },
+    "files": [
+        "bin",
+        "lib",
+        "templates"
+    ],
+    "engines": {
+        "node": ">=20"
+    },
+    "dependencies": {
+        "@clack/prompts": "^0.11.0",
+        "chalk": "^5.4.1",
+        "commander": "^14.0.0",
+        "fs-extra": "^11.3.0"
+    }
+}

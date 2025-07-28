@@ -1,0 +1,32 @@
+{
+    "name": "example",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "npx tsx src/index.ts",
+        "build": "tsc",
+        "lint": "eslint \"src/**/*.ts\"",
+        "format": "prettier --write ."
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@eslint/compat": "^1.2.3",
+        "@eslint/js": "^9.16.0",
+        "@typescript-eslint/eslint-plugin": "^8.17.0",
+        "@typescript-eslint/parser": "^8.17.0",
+        "eslint": "^9.16.0",
+        "eslint-config-prettier": "^9.1.0",
+        "prettier": "^3.6.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3",
+        "typescript-eslint": "^8.0.0"
+    },
+    "dependencies": {
+        "nats": "^2.29.3",
+        "nexus-nf": "^0.4.0",
+        "zod": "^4.0.5"
+    }
+}
