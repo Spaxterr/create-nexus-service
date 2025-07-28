@@ -7,7 +7,7 @@
         "create-nexus-service": "bin/cli.js"
     },
     "scripts": {
-        "release": "np"
+        "release": "np --yolo"
     },
     "files": [
         "bin",
