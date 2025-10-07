@@ -1,6 +1,6 @@
 {
     "name": "create-nexus-service",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "CLI tool to create a NexusNF service project",
     "author": "Spaxter",
     "bin": {
