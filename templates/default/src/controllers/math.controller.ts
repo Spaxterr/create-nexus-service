@@ -1,12 +1,15 @@
-import { Controller, Endpoint } from 'nexus-nf';
+import { ControllerBase, Endpoint } from 'nexus-nf';
 
 interface MathPayload {
     first: number;
     second: number;
 }
 
-@Controller('math')
-class MathController {
+class MathController extends ControllerBase {
+    constructor() {
+        super('math', { queue: 'math-workers' });
+    }
+
     @Endpoint('add')
     async add(payload: MathPayload) {
         const { first, second } = payload;
@@ -14,7 +17,7 @@ class MathController {
     }
 
     @Endpoint('subtract')
-    async substract(payload: MathPayload) {
+    async subtract(payload: MathPayload) {
         const { first, second } = payload;
         return first - second;
     }
